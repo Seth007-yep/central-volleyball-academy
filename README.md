@@ -14,4 +14,4 @@ The official name supplied for the project is **Central Volleyball Academy**, an
 
 ## Current development environment
 
-The available XAMPP CLI reports PHP 8.0.30 and MariaDB 10.4.32; both are too old for production use. Composer is not currently installed. The local database is for learning only. Do not enter real player/applicant data until the academy has approved its privacy, guardian, and retention policies. See [local setup notes](docs/local-setup.md) before configuring Apache or adding dependencies. A private GitHub backup has been requested and is awaiting GitHub account connection.
+The available XAMPP CLI reports PHP 8.0.30 and MariaDB 10.4.32; both are too old for production use. Composer is not currently installed. The local database is for learning only. Do not enter real player/applicant data until the academy has approved its privacy, guardian, and retention policies. See [local setup notes](docs/local-setup.md) before configuring Apache or adding dependencies. The project source is publicly available at [the Central Volleyball Academy GitHub repository](https://github.com/Seth007-yep/central-volleyball-academy).
