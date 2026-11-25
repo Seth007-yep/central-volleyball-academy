@@ -1,0 +1,19 @@
+# Local PHP configuration can contain passwords and must stay out of Git.
+/.env
+/config/local.php
+
+# Composer recreates installed packages from composer.json / composer.lock.
+/vendor/
+
+# Runtime data is not source code and may contain personal information.
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/sessions/*
+!/storage/sessions/.gitkeep
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+
+# Local/editor and test-runner output.
+/.phpunit.cache/
+/.vscode/*.local.json
+/.vscode/settings.json

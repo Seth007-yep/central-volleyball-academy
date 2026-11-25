@@ -1,0 +1,17 @@
+# Keep Apache from listing files when a directory has no index document.
+Options -Indexes -MultiViews
+DirectoryIndex index.php
+
+# Send unknown paths through the front controller, while serving real assets
+# such as CSS files directly. This requires Apache's mod_rewrite module.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+# Do not expose hidden files through the public web root.
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

@@ -1,0 +1,13 @@
+{
+    "name": "central-volleyball-academy/website",
+    "description": "Public website and management application for Central Volleyball Academy.",
+    "type": "project",
+    "require": {
+        "php": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cva\\": "app/"
+        }
+    }
+}
